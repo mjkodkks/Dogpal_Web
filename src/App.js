@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './pic/logopawpal_head_520x520.png';
+import logo_pic from './pic/logodogpal_text.png';
+import Uploadpic from './uploadpic';
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-       <div>Hello</div>
+        <div className="logo">
+       <img className="logo img" src={logo_pic}></img>
+       </div>
+       <div className="secondqoute">friend of best friend</div>
+       <Uploadpic />
       </div>
     );
   }

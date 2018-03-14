@@ -1,28 +1,44 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Itim');
+
+body {
+  font-family: 'Itim', cursive;
+  background-color: #f29e03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='15' height='15' fill-opacity='0.6' fill='%23ffa61d'/%3E%3C/svg%3E");
+  background-size: auto auto;
+  background-position: center;
+  font-size: 24px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.logo img {
+  margin: 30px 0 0 0;
+  width: 30%;
+  height: 30%;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.secondqoute {
+  display: flex;
+  justify-content: center;
+  color:#fff;
+  padding-left: 100px
 }
 
-.App-title {
-  font-size: 1.5em;
+
+.uploadpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  
 }
 
-.App-intro {
-  font-size: large;
+.uploadpic-box{
+  width: 100px;
+  height: 100px;
+  border: 5px dashed #2a3d45;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
