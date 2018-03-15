@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import logo from './pic/logopawpal_head_520x520.png';
 import logo_pic from './pic/logodogpal_text.png';
 import Uploadpic from './uploadpic';
 
