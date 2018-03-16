@@ -8,10 +8,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="logo">
-       <img className="logo img" src={logo_pic}></img>
+        <div className="animated bounceIn logo">
+       <img className="logo img" src={logo_pic}alt="Smiley face"/>
        </div>
-       <div className="secondqoute">friend of best friend</div>
+       <div className="animated bounceInRight secondqoute">friend of best friend</div>
        <Uploadpic />
       </div>
     );

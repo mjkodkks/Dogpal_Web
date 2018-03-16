@@ -20,7 +20,7 @@ class TableDog extends Component {
             return(
               <tr>
                 <td>{index+1}</td>
-                <td><img src={"http://161.246.6.240:10105"+eachResult.image}/></td>
+                <td><img src={"http://161.246.6.240:10105"+eachResult.image} alt="Smiley face" /></td>
               </tr>
             );
           })}

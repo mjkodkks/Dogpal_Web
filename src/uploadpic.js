@@ -43,7 +43,7 @@ class Uploadpic extends Component {
     let { imagePreviewUrl } = this.state;
     let $imagePreview = null;
     if (imagePreviewUrl) {
-      $imagePreview = (<img className="outside-box-after" src={imagePreviewUrl} />);
+      $imagePreview = (<img className="outside-box-after" src={imagePreviewUrl} alt="Smiley face" />);
     } else {
       $imagePreview = (<div className="outside-box-before"></div>);
     }
