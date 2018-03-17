@@ -26,11 +26,22 @@ class Uploadpic extends Component {
       }).catch(errors => console.log(errors));
   }
 
+  _cancelSubmit(e) {
+    e.preventDefault();
+    
+    
+      this.setState({
+        file: '',
+        imagePreviewUrl: '',
+      });
+    
+  }
+
   _handleImageChange(e) {
     e.preventDefault();
     let reader = new FileReader();
     let file = e.target.files[0];
-    reader.onloadend = () => {
+    reader.onload = () => {
       this.setState({
         file: file,
         imagePreviewUrl: reader.result
@@ -41,11 +52,11 @@ class Uploadpic extends Component {
 
   render() {
     let { imagePreviewUrl } = this.state;
-    let $imagePreview = null;
+    let imagePreview = null;
     if (imagePreviewUrl) {
-      $imagePreview = (<img className="outside-box-after" src={imagePreviewUrl} alt="Smiley face" />);
+      imagePreview = (<img className="outside-box-after" src={imagePreviewUrl} alt="Smiley face" />);
     } else {
-      $imagePreview = (<div className="outside-box-before"></div>);
+      imagePreview = (<div className="outside-box-before"></div>);
     }
 
     return (
@@ -55,15 +66,23 @@ class Uploadpic extends Component {
 
             <form onSubmit={(e) => this._handleSubmit(e)}>
               <div className="imgPreview">
-                {$imagePreview}
+                {imagePreview}
                 <input className="fileInput"
                   type="file"
+                  accept="image/*"
                   onChange={(e) => this._handleImageChange(e)} />
               </div>
               <div style={{ textAlign: 'center' }}>
-                <button className="submitButton"
-                  type="submit"
-                  onClick={(e) => this._handleSubmit(e)}>Upload Image</button></div>
+                {this.state.file === ''
+                  ? <button type="button" className='disablebtn' disabled>Browse your lovely dog</button>
+                  :<div> 
+                  <button className='submitButton' type="submit"
+                  onClick={(e) => this._handleSubmit(e)}>Upload Image</button>
+                  <button className='cancelButton' type="reset"
+                  onClick={(e) => this._cancelSubmit(e)}>X</button>
+                  </div>
+                }
+              </div>
             </form>
           </div>
         </div>
