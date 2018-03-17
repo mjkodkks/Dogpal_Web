@@ -68,10 +68,10 @@ body {
   height: 200px;
   background: #e5d666;
   background-image: url("./pic/upload.png");
-    background-repeat: no-repeat;
-    
-    background-position: center;
- 
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s;
+  
 }
 
 
@@ -175,7 +175,7 @@ body {
   background: #e5d666;
   border: 4px solid#324e54;
   box-shadow: 0px 10px 0px 0px rgba(50,78,84,1);
-    
+
 
 }
 
@@ -192,11 +192,47 @@ body {
 }
 
 .dog-table{
-  width: 50%;
-
+  width: 400px;
+  background: #334F55;
+  margin: 30px;
+  border-radius: 10px 10px 0 0;
+  color:#fff;
+  transition: all 1s;
 }
 
-@media screen and (max-width: 304px) {
+.dog-table .no {
+  width: 20%;
+}
+
+.dog-table td{
+  
+  margin: 20px;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+  color: #334F55;
+  
+}
+
+
+.dog-table>thead{
+  height: 40px;
+  color:#fff;
+  background: #334F55;
+}
+
+.dog-table tbody{
+  height: 40px;
+  background: #e6d764;
+  transition: all 0.5s ease-in-out;
+}
+
+.dog-table tbody:hover{
+  height: 40px;
+  background: #a09333;
+}
+
+@media screen and (max-width: 414px) {
   body{
   font-size: 16px;
   transition: all 0.5s;
@@ -216,9 +252,47 @@ body {
   }
 
   .disablebtn{
-    
     font-size: 20pt;
-    
+  }
+
+  .dog-table{
+    width: 300px;
+    background: #334F55;
+    margin: 20px;
+    border-radius: 10px 10px 0 0;
+    color:#fff;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  body{
+  font-size: 16px;
+  transition: all 0.5s;
+  }
+  .submitButton{
+    margin: 20px 0 10px 0;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.5s;
+  }
+
+  .logo img {
+    margin: 30px 0 0 0;
+    width: 250px;
+    height: 30%;
+    transition: all 0.5s;
+  }
+
+  .disablebtn{
+    font-size: 20pt;
+  }
+
+  .dog-table{
+    width: 250px;
+    background: #334F55;
+    margin: 20px;
+    border-radius: 10px 10px 0 0;
+    color:#fff;
   }
 }
 

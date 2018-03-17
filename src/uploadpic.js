@@ -28,13 +28,10 @@ class Uploadpic extends Component {
 
   _cancelSubmit(e) {
     e.preventDefault();
-    
-    
       this.setState({
         file: '',
         imagePreviewUrl: '',
       });
-    
   }
 
   _handleImageChange(e) {
@@ -74,7 +71,7 @@ class Uploadpic extends Component {
               </div>
               <div style={{ textAlign: 'center' }}>
                 {this.state.file === ''
-                  ? <button type="button" className='disablebtn' disabled>Browse your lovely dog</button>
+                  ? <button type="button" className='disablebtn' disabled>Browse your lovely dog :)</button>
                   :<div> 
                   <button className='submitButton' type="submit"
                   onClick={(e) => this._handleSubmit(e)}>Upload Image</button>
