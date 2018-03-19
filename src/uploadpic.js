@@ -31,6 +31,7 @@ class Uploadpic extends Component {
       this.setState({
         file: '',
         imagePreviewUrl: '',
+        data: '',
       });
   }
 
@@ -38,7 +39,7 @@ class Uploadpic extends Component {
     e.preventDefault();
     let reader = new FileReader();
     let file = e.target.files[0];
-    reader.onload = () => {
+    reader.onloadend = () => {
       this.setState({
         file: file,
         imagePreviewUrl: reader.result

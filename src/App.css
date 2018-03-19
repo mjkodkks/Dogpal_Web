@@ -8,15 +8,15 @@ body {
   background-position: center;
   font-size: 24px;
 }
-.logo {
+
+.logo{
   display: flex;
   justify-content: center;
 }
 
-.logo img {
-  margin: 30px 0 0 0;
-  width: 300px;
-  height: 30%;
+.img{
+  margin: 100px 0 0 0;
+  height: 95px;
 }
 
 @keyframes bounce { 
@@ -228,9 +228,10 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.dog-table tbody:hover{
-  height: 40px;
+
+.dog-table tr:hover{
   background: #a09333;
+  transition: all 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 414px) {
@@ -247,8 +248,7 @@ body {
 
   .logo img {
     margin: 30px 0 0 0;
-    width: 250px;
-    height: 30%;
+    height: 90px;
     transition: all 0.5s;
   }
 
@@ -284,8 +284,7 @@ body {
 
   .logo img {
     margin: 30px 0 0 0;
-    width: 250px;
-    height: 30%;
+    height: 95px;
     transition: all 0.5s;
   }
 

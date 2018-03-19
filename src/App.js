@@ -7,12 +7,12 @@ import Uploadpic from './uploadpic';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="animated bounceIn logo">
-       <img className="logo img" src={logo_pic}alt="Smiley face"/>
-       </div>
-       <div className="animated bounceInRight secondqoute">friend of best friend</div>
-       <Uploadpic />
+      <div>
+        <div className="logo">
+          <img className="img" src={logo_pic} alt="Hi" />
+        </div>
+        <div className="animated bounceInRight secondqoute">friend of best friend</div>
+        <Uploadpic />
       </div>
     );
   }
