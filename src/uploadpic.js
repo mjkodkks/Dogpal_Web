@@ -15,11 +15,11 @@ class Uploadpic extends Component {
     // TODO: do something with -> this.state.file
 
     var file_image = this.state.file;
-    /* axios.get('http://161.246.6.240:10105/api/test/').then( data => {
+    /* axios.get('http://203.150.225.205:10104/api/test/').then( data => {
       console.log(data.data);
     
     }) */
-    axios.post('http://161.246.6.240:10105/api/upload/a.jpg', file_image)
+    axios.post('http://203.150.225.205:10104/api/upload/a.jpg', file_image)
       .then(response => {
         this.setState({ data: response.data.similar })
         console.log(this.state.data)

@@ -28,7 +28,7 @@ class TableDog extends Component {
             return(
               <tr>
                 <td>{index+1}</td>
-                <td className="animated infinite pulse"><img src={"http://161.246.6.240:10105"+eachResult.image} width="200" height="200" alt="Smiley face" /></td>
+                <td className="animated infinite pulse"><img src={"http://203.150.225.205:10104"+eachResult.image} width="200" height="200" alt="Smiley face" /></td>
               </tr>
             );
           })} 
